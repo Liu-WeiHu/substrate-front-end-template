@@ -22,6 +22,7 @@ import NodeInfo from './NodeInfo'
 import TemplateModule from './TemplateModule'
 import Transfer from './Transfer'
 import Upgrade from './Upgrade'
+import Kitties from './kitties'
 
 function Main() {
   const { apiState, apiError, keyringState } = useSubstrateState()
@@ -76,6 +77,9 @@ function Main() {
           <Grid.Row>
             <Transfer />
             <Upgrade />
+          </Grid.Row>
+          <Grid.Row>
+            <Kitties />
           </Grid.Row>
           <Grid.Row>
             <Interactor />
